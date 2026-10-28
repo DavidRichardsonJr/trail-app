@@ -473,13 +473,12 @@ let currentTheme = 'technical';
 // ---------- MANAGEMENT VIEW (staff-only action/status color coding) ----------
 let managementView = false;
 let actionColorMap = {};
-// Single earthtone for every action; actions are told apart by marker shape + legend, not hue
-const ACTION_PALETTE = ['#8C6239'];
+const ACTION_PALETTE = ['#2E86AB','#457B9D','#6D6875','#F4A300','#E76F51','#2A9D8F'];
 const ACTION_COLOR_OVERRIDES = {
-  'install new': '#8C6239',
-  'new install': '#8C6239',
-  'replace':     '#8C6239',
-  'paint':       '#8C6239'
+  'install new': '#E63946', // red
+  'new install': '#E63946', // red (alt phrasing)
+  'replace':     '#00A896', // teal
+  'paint':       '#8E44AD'  // purple
 };
 
 /**
